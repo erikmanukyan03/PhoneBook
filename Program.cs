@@ -72,11 +72,11 @@ namespace PhoneBook
         {
             if (ordering == "Ascending")
             {
-                return String.Compare(x[criteria], y[criteria]);
+                return String.Compare(x?[criteria], y?[criteria]);
             }
             else
             {
-                return String.Compare(y[criteria], x[criteria]);
+                return String.Compare(y?[criteria], x?[criteria]);
             }
         }
     }
